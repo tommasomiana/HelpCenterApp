@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">   
+    <head>
+        {% if title %}
+            <title> Help Center Flask App - {{ title }} </title>
+        {% else %}
+            <title> Help Center Flask App </title>
+        {% endif %}
+    </head>
+    <body>
+        <h1>
+            {{ title }}
+        </h1>
+        <div>
+            {% block content %}
+            {% endblock %}
+        </div>
+        <br>
+        <div>
+            <a href="{{ url_for('home') }}">Go back to the home</a>
+        </div>
+    </body>
+</html>

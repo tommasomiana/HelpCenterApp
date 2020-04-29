@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>{{title}}</title>
+    </head>
+<body>
+    <h1>
+        {{ title }}
+    </h1>
+    <ul>
+        <li>
+            <a href="{{ url_for('img_upload') }}">upload the image of the problem</a>
+        </li>
+        <br>
+        <li>
+            <a href="{{ url_for('chat_room') }}">send a feedback or report a problem</a>
+        </li>
+    </ul>
+</body>
+</html>
